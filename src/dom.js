@@ -1,7 +1,7 @@
 window.dom = {
   create(string) {
-    const container = document.createElement("template");
-    container.innerHTML = string.trim();
+    const container = document.createElement("template"); //这样里面可以随便写标签
+    container.innerHTML = string.trim(); //把字符串两边的空格去掉
     return container.content.firstChild;
   },
   after(node, node2) {
